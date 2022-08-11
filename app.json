@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "uber-food-app-rc",
+    "slug": "uber-food-app-rc",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
