@@ -3,7 +3,9 @@
     "name": "Uber Lets Eat",
     "slug": "uber-food-app-rc",
     "version": "1.0.0",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "updates": {
@@ -22,6 +24,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9c463720-d4f5-45fb-ac27-9b385463eca6"
+      }
     }
   }
 }
