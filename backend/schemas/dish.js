@@ -1,0 +1,92 @@
+export default {
+  name: "dish",
+  title: "Dish",
+  type: "document",
+  fields: [
+    {
+      name: "name",
+      title: "Dish Name",
+      type: "string",
+      validation: (Rule) => Rule.required().error("Title is required"),
+    },
+    {
+      name: "description",
+      title: "Description",
+      type: "text",
+      validation: (Rule) => Rule.required().error("Description is required"),
+    },
+    {
+      name: "size",
+      title: "Size",
+      type: "text",
+      validation: (Rule) => Rule.required().error("Description is required"),
+    },
+    {
+      name: "rating",
+      title: "Rating",
+      type: "number",
+      validation: (Rule) => Rule.required().error("Description is required"),
+    },
+    {
+      name: "weight",
+      title: "Weight",
+      type: "number",
+      validation: (Rule) => Rule.required().error("Description is required"),
+    },
+    {
+      name: "transport",
+      title: "Transport",
+      type: "number",
+      validation: (Rule) => Rule.required().error("Description is required"),
+    },
+    {
+      name: "minutage",
+      title: "Minutage",
+      type: "number",
+      validation: (Rule) => Rule.required().error("Description is required"),
+    },
+    {
+      name: "calories",
+      title: "Calories",
+      type: "number",
+      validation: (Rule) => Rule.required().error("Description is required"),
+    },
+    {
+      name: "price",
+      title: "Price",
+      type: "number",
+      validation: (Rule) => Rule.required().error("Price is required"),
+    },
+    {
+      name: "image",
+      title: "Image",
+      type: "image",
+      validation: (Rule) => Rule.required().error("Image is required"),
+    },
+    {
+      name: "category",
+      title: "Category",
+      type: "reference",
+      to: [{ type: "category" }],
+      validation: (Rule) => Rule.required().error("Category is required"),
+    },
+    {
+      name: "height",
+      title: "Height",
+      type: "number",
+      validation: (Rule) => Rule.required().error("Title is required"),
+    },
+    {
+      name: "padding",
+      title: "Padding",
+      type: "number",
+      validation: (Rule) => Rule.required().error("Title is required"),
+    },
+    {
+      name: "ingridients",
+      type: "array",
+      title: "Ingridients",
+      of: [{ type: "reference", to: [{ type: "ingridient" }] }],
+    },
+  ],
+};

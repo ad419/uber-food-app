@@ -1,10 +1,27 @@
 {
   "expo": {
-    "name": "uber-food-app-rc",
+    "name": "Uber Lets Eat",
     "slug": "uber-food-app-rc",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "chessapp.com"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "chessapp.com"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
   }
 }
