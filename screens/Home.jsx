@@ -80,6 +80,7 @@ category -> {...}
  ingridients[] ->{ 
  ...,
  },
+ 
 category -> {...}
 }`
       )
